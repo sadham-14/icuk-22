@@ -1,4 +1,4 @@
-FROM frolvlad/alpine-oraclejdk8:slim
+FROM FROM openjdk:8-jdk-alpine
 VOLUME /tmp
 ADD targetspringboot-application-0.0.1-SNAPSHOT.jar springboot-application.jar
 RUN sh -c 'touch /springboot-application.jar'
